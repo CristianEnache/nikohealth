@@ -15,8 +15,8 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-    "psr-4": {
-      "cristianenache\\nikohealth\\": "src/"
+        "psr-4": {
+            "Nikohealth\\": "src/"
+        }
     }
-  },
 }
