@@ -1,0 +1,22 @@
+{
+    "name": "cristianenache/nikohealth",
+    "description": "NikoHealth API",
+    "type": "package",
+    "require": {
+    	"php": "^7.2",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Cristian Enache",
+            "email": "cristian.enache@invgroup.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+    "psr-4": {
+      "cristianenache\\nikohealth\\": "src/"
+    }
+  },
+}
