@@ -6,11 +6,11 @@ class Patient{
 
     public $name;
 
-	//public function __construct(){
-    //
-	//    $this->name = 'Mynameis';
-    //
-	//}
+	public function __construct(){
+
+	    $this->name = 'Mynameis';
+
+	}
 
 
 
