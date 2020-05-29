@@ -1,0 +1,29 @@
+<?php
+
+namespace Nikohealth;
+
+use GuzzleHttp\Client;
+use Illuminate\Http\Request;
+use Exception;
+use Nikohealth\Auth;
+
+
+class Insurance {
+
+    public static function store($insurance, $patient_id){
+
+        $client = Auth::getHttpClient();
+
+        $response = $client->post( config('app.niko_health_api_url') . '/external/v1/patients/' . $patient_id . '/insurances', [
+            'json'  => $insurance
+        ]);
+
+        try{
+            return json_decode($response->getBody()->getContents());
+        }catch(Exception $exception){
+            return $exception->getMessage();
+        }
+
+    }
+
+}
